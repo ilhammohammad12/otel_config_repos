@@ -1,0 +1,21 @@
+name: OTel Config Update Workflow
+
+on:
+  push:
+    paths:
+      - 'otel-config.yml'
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Run deployment logic (placeholder for now)
+      - name: Notify Config Change
+        run: |
+          echo "Changes detected in otel-config.yml"
+          echo "Deployment logic goes here."
